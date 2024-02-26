@@ -1,0 +1,97 @@
+.navbar {
+  /* arrangement */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  font-family: "Kode Mono";
+  border: 1px solid #111;
+  backdrop-filter: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero {
+  display: grid;
+  padding: 2rem 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-img {
+  flex-direction: row;
+  justify-content: center;
+  justify-self: end;
+}
+/* .hero-in-img {
+  height: 90%;
+  width: 80%;
+} */
+@font-face {
+  font-family: NDOT-47;
+  src: url(font/ndot-47-inspired-by-nothing.ttf);
+}
+
+.hero-text {
+  font-family: "NDOT-47";
+  font-size: 1.5rem;
+}
+
+.hero-btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.hero-btn {
+  /* align-items: center; */
+  font-family: "NDOT-47";
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1rem 4rem;
+}
+
+.btn-1 {
+  background-color: #111;
+  color: rgb(255, 255, 255);
+}
+.affili {
+  width: 100%;
+}
+
+.z-pattern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: stretch;
+}
+
+video {
+  height: 40%;
+  width: 100%;
+}
+
+.z-text {
+  font-family: "NDOT-47";
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.dashboard-grey {
+  width: 95vw;
+  height: 90vh;
+  background-image: url(img/pexels-scott-webb-2824173.jpg);
+  border: solid;
+  border-width: 20px;
+  border-radius: 12px;
+  border-color: #8080802d;
+  backdrop-filter: blur(50px);
+  margin: auto;
+  margin-top: 4rem;
+}
