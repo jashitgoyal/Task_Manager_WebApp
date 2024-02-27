@@ -1,3 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kode Mono";
+}
 .navbar {
   /* arrangement */
   display: flex;
@@ -83,15 +90,52 @@ video {
   font-weight: bold;
 }
 
-.dashboard-grey {
+.dashboard-center {
   width: 95vw;
   height: 90vh;
-  background-image: url(img/pexels-scott-webb-2824173.jpg);
-  border: solid;
-  border-width: 20px;
-  border-radius: 12px;
-  border-color: #8080802d;
   backdrop-filter: blur(50px);
   margin: auto;
   margin-top: 4rem;
+}
+
+/* The Type writer effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(12, 12, 12);
+  }
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 10% auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; Adjust as needed */
+  animation: typing 3.5s steps(20, end) infinite,
+    blink-caret 0.75s step-end infinite;
 }
