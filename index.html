@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Manager</title>
+  <link rel="stylesheet" href="dashboard.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +14,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-
-  <link href="https://fonts.cdnfonts.com/css/nothing" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
-  <link rel="stylesheet" href="dashboard.css">
+
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"> </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
+  <script type="module" src="register.js" defer></script>
 </head>
 
 <body>
@@ -34,14 +36,27 @@
       </div>
       <div class="nav-links">
         <a href="">Home</a>
-        <a href="">Dashboard</a>
-        <a href="">Login</a>
-        <a href=""><span>Signup</span>
-          <div class="dabba"></div>
-        </a>
+        <a href="thetaskmanager/dashboard.html">Dashboard</a>
+        <a href="">About us</a>
+        <button class="signup"><span>Signup</span></button>
       </div>
     </div>
   </header>
+  <div class="overlay"></div>
+  <div class="login-form">
+    <span class="closerbtn">&times;</span>
+    <form><div>
+      <label>Username</label>
+      <input type="email" id="email" required />s
+    </div>
+      <div>
+        <label>Password</label>
+        <input type="password" id="password" required />
+      </div>
+      <button type="submit" id="login">LOGIN</button>
+    </form>
+    <button id="google-login">REGISTER</button>
+  </div>
   <article>
     <div class="hero">
       <div class="hero-text typewriter">
@@ -62,13 +77,13 @@
   <img class="affili" src="img/affiliate.png">
   <article class="z-div">
     <div class="z-pattern">
-      <div><video loop autoplay src="video/pexels_videos_2902 (1080p).mp4"></video></div>
+      <div><video controls src="video/pexels_videos_2902 (1080p).mp4"></video></div>
       <div class="z-text">
         <span>->Manage Your Work In A Simple And Effective Manner</span>
       </div>
       <div class="z-text">->Save Your Time Like Never Before</div>
-      <div><video autoplay loop src="video/pexels-jd-5879061 (1440p).mp4"></video></div>
-      <div><video autoplay loop src="video/pexels_videos_2670 (1080p).mp4"></video></div>
+      <div><video controls src="video/pexels-jd-5879061 (1440p).mp4"></video></div>
+      <div><video controls src="video/pexels_videos_2670 (1080p).mp4"></video></div>
       <div class="z-text">->Get Ahead The Rest,Simply</div>
     </div>
   </article>
@@ -610,15 +625,6 @@
               </div>
               <h2>Darlene Robertson<br><span>Commodo volutpot noc</span></h2>
             </div>
-            <!-- messagesUser end -->
-            <!-- messagesUser start -->
-            <div class="messagesUser">
-              <div class="messagesUserImg">
-                <img src="./groupImg/img5.jpg" alt="img5">
-              </div>
-              <h2>Kristin Watson<br><span>Commodo volutpot noc</span></h2>
-            </div>
-            <!-- messagesUser end -->
           </div>
           <!-- messages end -->
         </main>
@@ -627,6 +633,117 @@
       <!-- right end -->
     </div>
   </article>
+<div class = "form-div">		
+  <form id="form"  class = "form-contact">
+    <div class="title-bar">
+      <div class="form-icon">
+      <span class="material-symbols-outlined">
+      cancel
+      </span>
+      <span class="material-symbols-outlined">
+        do_not_disturb_on
+        </span>
+        <span class="material-symbols-outlined">
+          add_circle
+          </span></div>
+          <div>Contact Us</div>
+      </div>
+        <input  type="text" placeholder="NAME" class="form-name">
+        <input  type="text" placeholder="E-MAIL" class="form-email">
+        <textarea  type="text" placeholder="MESSAGE" class="form-text"></textarea>
+    <input  type="submit" value="GO!" class="form-submit">
+    
+  </form></div>
+  <footer class="footer divi">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+          
+      <h2>Contact</h2>
+      
+      <address>
+        5534 Somewhere In. The World 22193-10212<br>
+            
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Online</a>
+          </li>
+  
+          <li>
+            <a href="#">Print</a>
+          </li>
+              
+          <li>
+            <a href="#">Alternative Ads</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+          
+          <li>
+            <a href="#">Automation</a>
+          </li>
+          
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+          
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2019 Something. All rights reserved.</p>
+      
+      <div class="legal__links">
+        <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 

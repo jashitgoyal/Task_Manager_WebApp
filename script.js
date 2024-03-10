@@ -38,15 +38,61 @@ const cursor = new MouseFollower({
 });
 //Gsap Animative Stuff
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".container", {
-  ScrollTrigger: {
+gsap.from(".container .left", {
+  scrollTrigger: {
     trigger: ".container",
     toggleActions: "restart none none restart",
+    ease:"bounce",
+    markes: true,
   },
-  x: -100,
-  duration: 10,
+  x: -200,
+  duration: 2,
 });
 
+gsap.from(".container .right", {
+  scrollTrigger: {
+    trigger: ".container",
+    toggleActions: "restart none none restart",
+    ease:"bounce",
+    markes: true,
+  },
+  y: -200,
+  duration: 2,
+});
+
+gsap.from(".projectCard", {
+  scrollTrigger: {
+    trigger: ".container",
+    toggleActions: "restart none none restart",
+    ease:"bounce",
+    markes: true,
+  },
+  y:600,
+  duration: 2,
+});
+
+gsap.from(".calendar", {
+  scrollTrigger: {
+    trigger: ".container",
+    toggleActions: "restart none none restart",
+    ease:"bounce",
+    markes: true,
+  },
+  y:600,
+  duration: 2,
+});
+
+
+gsap.from(".messages", {
+  scrollTrigger: {
+    trigger: ".container",
+    toggleActions: "restart none none restart",
+    ease:"bounce",
+    markes: true,
+  },
+  y:600,
+  duration: 2,
+});
 // Dashboard js
 let toggle = document.querySelector(".toggle");
 let left = document.querySelector(".left");
@@ -82,3 +128,17 @@ window.onclick = (e) => {
     body.style.overflow = "";
   }
 };
+
+
+// Show model
+function showModal(){
+  document.querySelector(".overlay").classList.add( "showoverlay" );
+  document.querySelector(".login-form").classList.add( "showlogin" );
+  
+}
+
+btnlogin  = document.querySelector(".signup");
+
+btnlogin.addEventListener('click', showModal);
+
+
