@@ -32,7 +32,7 @@
   <header>
     <div class='navbar'>
       <div class="nav-heading">
-        Task Manager
+       <h2> Task Manager</h2>
       </div>
       <div class="nav-links">
         <a href="">Home</a>
@@ -47,7 +47,7 @@
     <span class="closerbtn">&times;</span>
     <form><div>
       <label>Username</label>
-      <input type="email" id="email" required />s
+      <input type="email" id="email" required />
     </div>
       <div>
         <label>Password</label>
@@ -55,7 +55,7 @@
       </div>
       <button type="submit" id="login">LOGIN</button>
     </form>
-    <button id="google-login">REGISTER</button>
+    <button id="google-login">GOOGLE LOGIN</button>
   </div>
   <article>
     <div class="hero">
@@ -634,7 +634,7 @@
     </div>
   </article>
 <div class = "form-div">		
-  <form id="form"  class = "form-contact">
+  <form id="form"  class = "form-contact" action="https://api.web3forms.com/submit" method="POST">
     <div class="title-bar">
       <div class="form-icon">
       <span class="material-symbols-outlined">
@@ -648,9 +648,10 @@
           </span></div>
           <div>Contact Us</div>
       </div>
-        <input  type="text" placeholder="NAME" class="form-name">
-        <input  type="text" placeholder="E-MAIL" class="form-email">
-        <textarea  type="text" placeholder="MESSAGE" class="form-text"></textarea>
+      <input type="hidden" name="access_key" value="d6dd424b-360a-490c-93ab-61cdf0928222">
+        <input  type="text" placeholder="NAME" name="name" class="form-name" required>
+        <input  type="email" placeholder="E-MAIL" name="email" class="form-email" required>
+        <textarea  type="text" placeholder="MESSAGE" name="message" class="form-text" required></textarea>
     <input  type="submit" value="GO!" class="form-submit">
     
   </form></div>

@@ -23,7 +23,6 @@
   const auth = getAuth(app);
   auth.languageCode = 'en'
   const provider = new GoogleAuthProvider()
-let user;
 
  const google_login = document.querySelector("#google-login")
  google_login.addEventListener('click',function(){
@@ -33,9 +32,10 @@ let user;
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
     // The signed-in user info.
-    user = result.user;
-    console.log("Logged in with", user)
-    window.location.href = "thetaskmanager/dashboard.html"
+    const  user = result.user;
+    // console.log("Logged in with", user)
+    alert(`LOGGED-IN SUCCESSFULLYSss`)
+    // window.location.href = "thetaskmanager/dashboard.html"
     // IdP data available using getAdditionalUserInfo(result)
     // ...
   }).catch((error) => {

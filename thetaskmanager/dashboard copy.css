@@ -1337,6 +1337,10 @@ body {
   background-color: rgba(0, 0, 0, 0.4); 
 }
 
+.modal h2{
+  margin-top: 50px;
+}
+
 .modal-content {
   background-color: #ffffff;
   /* margin: 15% auto;  */
@@ -1352,7 +1356,10 @@ body {
   padding: 20px 12px;
   font-size: 28px;
 }
-
+#task-name{
+  height: 10rem;
+  width: 21rem;
+}
 .section {
   background-color: #000000;
 }
@@ -1367,4 +1374,16 @@ body {
 
 .projectcardadder{
   display: block;
+}
+
+.addtimelinebtn{
+  margin:auto;
+  padding: 12px 20px;
+}
+
+.timelinebtn{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 12px 20px;
 }

@@ -55,13 +55,13 @@ body {
   background-color: #111;
   color: white;
   padding: 10px 15px;
+  margin: 10px auto;
 }
 
 .login-form span{
   position: absolute;
   width: 30px;
   height: 30px;
-
   right: 0;
   top: 0;
 }
@@ -400,4 +400,12 @@ textarea::placeholder {
   .footer__nav {
     flex: 2 0px;
   }
+}
+
+
+.signup{
+  padding: 2px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
 }

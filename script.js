@@ -142,3 +142,8 @@ btnlogin  = document.querySelector(".signup");
 btnlogin.addEventListener('click', showModal);
 
 
+let closer = document.querySelector(".closerbtn")
+closer.addEventListener("click", function() {
+  document.querySelector(".overlay").classList.remove( "showoverlay" );
+  document.querySelector(".login-form").classList.remove( "showlogin" );
+})
